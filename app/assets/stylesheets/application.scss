@@ -47,10 +47,47 @@
    background-color: #555;
  }
 
- .fa-code:hover {
-    color: red;
+ .fa-stack:hover {
+    color: rgb(0, 0, 250);
 }
 
+.b {
+  text-align: left;
+}
+
+.card {
+  background: white;
+}
+
+.change-color:hover {
+  background: rgb(0, 0, 250);
+}
+
+.service{
+  background-color: 	#D3D3D3;
+  width: 100%;
+}
+
+.gfg {
+  background-color: #2a2a72;
+background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  
+
+    color: white;
+    text-align: center;
+}
+
+.color{
+  color: darkblue;
+}
+
+.width{
+  width: 100%;
+}
+
+.dispaly{
+  display: flex;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
