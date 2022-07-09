@@ -1,19 +1,57 @@
 @import "bootstrap";
-
-.bg-img {
-    /* The image used */
-    background-image: image-url("12.jpg");
-    height: 100px;
-    width: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .bg-img {
+      /* The image used */
+      background-image: image-url("12.jpg");
+      height: 100px;
+      width: 100%;
     
-  }
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+}
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .bg-img {
+      /* The image used */
+      background-image: image-url("12.jpg");
+      height: 1000px;
+      width: 100%;
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+}
 
-  .bg-text { 
+  @media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .bg-text { 
+      margin-top: 400px;
+      color: whitesmoke;
+    text-align: center;
+  }
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .bg-text { 
       margin-top: 70px;
     color: whitesmoke;
     position: absolute;
@@ -25,21 +63,34 @@
     padding: 20px;
     text-align: center;
   }
-
-  .col1{
+}
   
-    position: relative;
-  }
-
+.c{
+  height: 180px;
+}
   .btn-primary:hover{
     color: #fff;
     background-color: #e2374e;
     border-color: #e2374e; /*set the color you want here*/
 }
-#about{
-    margin-top: 850px;
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    #about{
+      margin-top: 500px;
+  }
 }
 
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    #about{
+      margin-top: 850px;
+  }
+}
 .rectangle {
     margin-left: 75px;
    height: 3px;
